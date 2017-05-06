@@ -1,0 +1,66 @@
+html {
+	min-height: 100%;
+	display: flex;
+	align-items: stretch;
+}
+body {
+	font: 80px 'Amatic SC', cursive;
+	color: #fff;
+	text-shadow: #000 0 0 2px;
+	font-weight: bold;
+	margin: 0;
+	flex: 1;
+	display: flex;
+}
+.container {
+	display: flex;
+	flex: 1;
+	overflow: hidden;
+}
+.panel {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s;
+}
+
+
+p {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+p:first-child {
+	font-size: 50%;
+	transform: translateY(-100%);
+}
+p:last-child {
+	font-size: 50%;
+	transform: translateY(100%);
+}
+
+
+#panel1 {
+	background: url("images/dance.jpg") center center/cover no-repeat;
+}
+#panel2 {
+	background: url("images/take.jpg") center center/cover no-repeat;
+}
+#panel3 {
+	background: url("images/mount.jpg") center center/cover no-repeat;
+}
+#panel4 {
+	background: url("images/give.jpg") center center/cover no-repeat;
+}
+#panel5 {
+	background: url("images/motion.jpg") center center/cover no-repeat;
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		font-size: 40px;
+	}
+}
